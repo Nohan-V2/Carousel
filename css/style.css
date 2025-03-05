@@ -44,6 +44,7 @@ img {
 
     @media screen and (min-width: 768px) {
         margin-top: 64px;
+        flex-direction: column;
         width: 60%;
     }
 
@@ -150,5 +151,21 @@ img {
         bottom: -16px;
         left: 110px;
         position: absolute;
+    }
+}
+
+.transition {
+
+    animation: fadein 1s ease-in-out;
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
     }
 }
